@@ -14,6 +14,7 @@ class Solution:
         while temp:
             if temp.val == val:
                 prev.next = temp.next
-            prev = temp   
+            if temp.val != val:    
+                prev = temp   
             temp = temp.next
         return head
