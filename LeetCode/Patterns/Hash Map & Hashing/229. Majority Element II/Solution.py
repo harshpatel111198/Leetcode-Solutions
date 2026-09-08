@@ -8,4 +8,8 @@ class Solution:
             
             if frequency[n] == appearance:
                 res.append(n)
+            
+            if len(res) == 2:
+                break
+            
         return res
