@@ -4,10 +4,7 @@ class Solution:
         res = []
         for n in nums:
             frequency[n] = frequency.get(n, 0) + 1
-        
-        appearance = len(nums)//3
-
-        for n in frequency:
+            appearance = len(nums)//3
             if frequency[n] > appearance:
                 res.append(n)
         return res
