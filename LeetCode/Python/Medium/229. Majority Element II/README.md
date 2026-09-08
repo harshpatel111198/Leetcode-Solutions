@@ -8,8 +8,8 @@
 Array, Hash Table, Sorting, Counting, Boyer–Moore Majority Vote Algorithm
 
 ### 🚀 Performance
-- **Runtime:** 15 ms
-- **Memory:** 23.6 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
