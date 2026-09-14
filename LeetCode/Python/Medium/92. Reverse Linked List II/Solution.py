@@ -6,7 +6,7 @@
 class Solution:
     def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
         temp = head
-        count = 1
+        count = 0
         prev = temp
         temp2 = None
         node = None
