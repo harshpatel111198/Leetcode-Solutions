@@ -9,11 +9,12 @@ class Solution:
         count = 1
         prev = temp
         temp2 = None
+        node = None
         while temp.next:
             count += 1
+            temp2 = temp.next
+
             if count == left:
-                node = None
-                temp2 = temp.next
                 while temp2 and count <= right:
                     t = temp2.next
                     temp2.next = node
@@ -22,6 +23,7 @@ class Solution:
                     count += 1  
             prev.next = node
             temp = temp.next
+            break
         head = prev
         while prev.next is not None:
             prev = prev.next
