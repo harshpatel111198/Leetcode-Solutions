@@ -11,6 +11,7 @@ class Solution:
         for i in range(left-1):
             leftPrev, cur = cur, cur.next
         
+        # reverse the nodes from left to right
         prev = None
         for i in range(right - left + 1):
             tempNxt = cur.next
@@ -18,7 +19,8 @@ class Solution:
             prev = cur
             cur = tempNxt
         
-        leftPrev.next.next = cur
-        leftPrev.next = prev
+        # update the pointers
+        leftPrev.next.next = cur # cur is node after right
+        leftPrev.next = prev # prev is right
 
         return dummy.next
