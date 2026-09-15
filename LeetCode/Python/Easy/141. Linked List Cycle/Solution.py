@@ -6,14 +6,21 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        slow, fast = head, head
-        hash_map = {}
-        cnt = 0
-        while fast is not None and fast.next is not None:
-            if slow == fast.next:
+        node = head
+        slow = head
+        q = set()
+        while node:
+            if node.next in q:
                 return True
-            # hash_map[cnt] = slow.val
-            slow = slow.next
-            fast = fast.next.next
-        else:
-            return False
+            q.add(node.next)
+            node = node.next
+        q = set()
+        return False
+        # while fast and fast.next:
+        #     fast = fast.next.next
+        #     slow = slow.next
+
+        #     print(fast,slow)
+        #     if fast == slow:
+        #         return True
+        # return False
