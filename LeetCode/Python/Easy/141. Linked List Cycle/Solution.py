@@ -14,7 +14,6 @@ class Solution:
                 return True
             q.add(node.next)
             node = node.next
-        q = set()
         return False
         # while fast and fast.next:
         #     fast = fast.next.next
