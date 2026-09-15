@@ -7,13 +7,10 @@
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         slow, fast = head, head
-        hash_map = {}
-        cnt = 0
-        while fast is not None and fast.next is not None:
-            if slow == fast.next:
-                return True
-            # hash_map[cnt] = slow.val
+        while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        else:
-            return False
+            
+            if slow == fast:
+                return True
+        return False
