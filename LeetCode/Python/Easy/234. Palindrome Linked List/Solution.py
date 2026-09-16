@@ -7,8 +7,8 @@ class Solution:
     def isPalindrome(self, head: ListNode | None) -> bool:
         slow = fast = head
         total = 0
-        if head and head.next is None:
-            return True
+        # if head and head.next is None:
+        #     return True
         while fast and fast.next:
             total += slow.val
             slow = slow.next
@@ -17,7 +17,7 @@ class Solution:
         while slow:
             total -= slow.val
             slow = slow.next
-        if total == 0:
+        if total == 0 or total == -middle_slow:
             return True
         return False
 
