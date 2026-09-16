@@ -4,18 +4,37 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def isPalindrome(self, head: ListNode | None) -> bool:
+
+    def findMid(self,head):
         slow = fast = head
-        stack = []
         while fast and fast.next:
-            stack.append(slow.val)
             slow = slow.next
             fast = fast.next.next
-        if fast:
-            slow = slow.next
+        return slow
 
-        while slow:
-            if stack.pop() != slow.val:
+    def isPalindrome(self, head: ListNode | None) -> bool:
+       
+        if not head or not head.next:
+            return True
+        # if fast has node then there are odd number of nodes.
+        # if fast:
+        #     slow = slow.next
+        # reverse the half side
+        prev = None
+        curr = self.findMid(head)
+        nxt = None
+        
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+
+        rightHead = prev
+        leftHead = head
+        while rightHead:
+            if rightHead.val != leftHead.val:
                 return False
-            slow = slow.next
+            rightHead = rightHead.next
+            leftHead = leftHead.next
         return True
