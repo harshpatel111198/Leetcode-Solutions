@@ -13,11 +13,13 @@ class Solution:
             total += slow.val
             slow = slow.next
             fast = fast.next.next
-        middle_slow = slow.val
+        # middle_slow = slow.val
+        if fast:
+            slow = slow.next
         while slow:
             total -= slow.val
             slow = slow.next
-        if total == 0 or total == -middle_slow:
+        if total == 0:
             return True
         return False
 
