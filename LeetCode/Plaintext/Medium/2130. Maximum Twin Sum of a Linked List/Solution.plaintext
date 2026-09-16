@@ -1,0 +1,16 @@
+        while curr:
+        curr = self.findMid(head)
+        # reverse the other half side
+        prev = nxt = None
+        
+    def pairSum(self, head: Optional[ListNode]) -> int:
+        return slow
+            fast = fast.next.next
+            slow = slow.next
+        while fast and fast.next:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+        
+        rightHead = prev
