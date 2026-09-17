@@ -5,6 +5,7 @@
 #         self.next = next
 class Solution:
     def oddEvenList(self, head: ListNode | None) -> ListNode | None:
+        
         even = evenHead = head.next
         odd = head
         while even and even.next:
