@@ -22,20 +22,17 @@ class Solution:
             tempHead = temp.next
             temp.next = None
             temp = tempHead
-        print(temp)
+        # print(temp)
         for i in range(k-no_extra_el):
             if temp:
                 tempHead = temp
                 for j in range(no_el-1):
-                    if temp:
-                        temp = temp.next
-                    else:
-                        break
+                    temp = temp.next
                 res.append(tempHead)
                 tempHead = temp.next
                 temp.next = None
                 temp = tempHead
             else:
-                res.append(ListNode())
+                res.append(None)
         return res
         
