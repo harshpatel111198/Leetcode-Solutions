@@ -16,7 +16,7 @@ class Solution:
         k = k % length if k > length else k
         for i in range(k):
             curr = head
-            while curr and curr.next.next:
+            while curr.next.next:
                 curr = curr.next
             temp = curr.next
             curr.next.next = head
