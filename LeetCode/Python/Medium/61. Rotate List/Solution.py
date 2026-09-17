@@ -4,21 +4,23 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        if head is None:
+    def rotateRight(self, head: ListNode | None, k: int) -> ListNode | None:
+        length = 0
+        curr = head
+        if not head or not head.next:
             return head
-        node = head
-        dummy = node
-        ln = 0
-        while dummy:
-            ln+=1
-            dummy = dummy.next
-        for i in range(k%ln):
-            while node:
-                if node.next.next is None:
-                    node.next.next = head
-                    head = node.next
-                    node.next = None
-                node = node.next
-            node = head
+        while curr:
+            curr = curr.next
+            length += 1
+        
+        k = k % length if k > length else k
+        for i in range(k):
+            curr = head
+            while curr and curr.next.next:
+                curr = curr.next
+            temp = curr.next
+            curr.next.next = head
+            curr.next = None
+            head = temp
         return head
+             
