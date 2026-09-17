@@ -10,13 +10,10 @@ class Solution:
         node = head
         dummy = node
         ln = 0
-        
         while dummy:
             ln+=1
             dummy = dummy.next
-
-        rotation = k%ln
-        for i in range(rotation):
+        for i in range(k%ln):
             while node:
                 if node.next.next is None:
                     node.next.next = head
