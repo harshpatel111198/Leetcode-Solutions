@@ -17,5 +17,4 @@ class Solution:
             prev.next = prev.next.next
         else:
             prev.next = None
-        print(prev)
         return head
