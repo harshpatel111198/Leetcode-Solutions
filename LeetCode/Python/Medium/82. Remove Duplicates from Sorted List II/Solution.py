@@ -5,18 +5,17 @@
 #         self.next = next
 class Solution:
     def deleteDuplicates(self, head: ListNode | None) -> ListNode | None:
-        frquency_map = {} 
         curr = head
-        prev = None
-        while curr:
-            frquency_map[curr.val] = frquency_map.get(curr.val, 0) + 1
-            curr = curr.next
-            
-        curr = ListNode(-1)
-        dummy = curr
-        for key in frquency_map.keys():
-            if frquency_map[key] == 1:
-                curr.next = ListNode(key)
+        dummyNode = ListNode(-1, head)
+        prev = dummyNode
+        while curr and curr.next:
+            if curr.val < curr.next.val:
+                prev = curr
+                curr = curr.next
+                continue
+            while curr and curr.next and curr.val == curr.next.val:
                 curr = curr.next
 
-        return dummy.next
+            prev.next = curr.next
+            curr = prev.next
+        return dummyNode.next
