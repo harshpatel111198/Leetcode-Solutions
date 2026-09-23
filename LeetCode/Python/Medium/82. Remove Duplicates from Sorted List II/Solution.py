@@ -11,7 +11,7 @@ class Solution:
         while curr:
             frquency_map[curr.val] = frquency_map.get(curr.val, 0) + 1
             curr = curr.next
-        print(frquency_map)
+            
         curr = ListNode(-1)
         dummy = curr
         for key in frquency_map.keys():
