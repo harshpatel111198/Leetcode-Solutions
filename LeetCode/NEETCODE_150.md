@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 5 / 150 (3.3%)
+- **Completed:** 6 / 150 (4.0%)
 
 ---
 
@@ -64,7 +64,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Find the Duplicate Number
 - [ ] LRU Cache
 - [ ] Merge k Sorted Lists
-- [ ] Reverse Nodes in k-Group
+- [x] [Reverse Nodes in k-Group](./Python/Hard/25. Reverse Nodes in k-Group/)
 
 ### 📂 Trees
 - [ ] Invert Binary Tree
