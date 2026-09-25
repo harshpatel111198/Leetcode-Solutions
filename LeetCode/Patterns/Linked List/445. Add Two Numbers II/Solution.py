@@ -44,6 +44,9 @@ class Solution:
 
             curr.next = ListNode(total)
             curr = curr.next
+        if carry:
+            curr.next = ListNode(carry)
+            curr = curr.next
         res = dummy.next
         prev = None
         while res:
