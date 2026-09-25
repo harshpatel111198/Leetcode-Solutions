@@ -1,6 +1,6 @@
 # 📝 445. Add Two Numbers II (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/add-two-numbers-ii/?envType=problem-list-v2&envId=linked-list)
+🔗 [Problem Link](https://leetcode.com/problems/add-two-numbers-ii/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
