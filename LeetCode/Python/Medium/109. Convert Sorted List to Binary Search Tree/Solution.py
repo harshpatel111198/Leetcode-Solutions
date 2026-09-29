@@ -11,45 +11,23 @@
 #         self.right = right
 class Solution:
     def sortedListToBST(self, head: ListNode | None) -> TreeNode | None:
-        if not head or not head.next:
-            return head
+        if not head:
+            return None
+        if not head.next:
+            return TreeNode(head.val)
         prev = None
         slow = head
         fast = head
         while fast and fast.next:
-            fast = fast.next.next
-            front = slow.next
-            slow.next = prev
             prev = slow
-            slow = front
+            slow = slow.next
+            fast = fast.next.next
         
+        prev.next = None
 
-        res = TreeNode(slow.val)
-        temp = res
-        slow = slow.next
-        right = None
-        fast = slow
-        while slow:
-            front = slow.next
-            slow.next = right
-            right = slow
-            slow = front 
-        while prev:
-                if temp.val > prev.val:
-                    temp.left = TreeNode(prev.val)
-                    temp = temp.left
-                else:
-                    temp.right = TreeNode(prev.val)
-                    temp = temp.right
-                prev = prev.next
-        temp = res
-        while right:
-            if temp.val < right.val:
-                temp.right = TreeNode(right.val)
-                temp = temp.right
-            else:
-                temp.left = TreeNode(right.val)
-                temp = temp.left
-            right = right.next
-      
-        return res          
+        root = TreeNode(slow.val)
+
+        root.left = self.sortedListToBST(head)                  
+        root.right = self.sortedListToBST(slow.next)  
+
+        return root               
