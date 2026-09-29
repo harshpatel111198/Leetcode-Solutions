@@ -8,8 +8,8 @@
 Linked List, Divide and Conquer, Tree, Binary Search Tree, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 6 ms
+- **Memory:** 21.4 MB
 
 ---
 
