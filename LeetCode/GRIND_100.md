@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 9 / 100 (9.0%)
+- **Completed:** 10 / 100 (10.0%)
 
 ---
 
@@ -50,7 +50,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [x] [Remove Nth Node From End of List](./Python/Medium/19. Remove Nth Node From End of List/)
 - [ ] Intersection of Two Linked Lists
 - [x] [Add Two Numbers](./Python/Medium/2. Add Two Numbers/)
-- [ ] Copy List with Random Pointer
+- [x] [Copy List with Random Pointer](./Python/Medium/138. Copy List with Random Pointer/)
 - [ ] LRU Cache
 - [x] [Sort List](./Python/Medium/148. Sort List/)
 - [ ] Merge k Sorted Lists
