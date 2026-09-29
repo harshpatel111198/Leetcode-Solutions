@@ -11,6 +11,8 @@
 #         self.right = right
 class Solution:
     def sortedListToBST(self, head: ListNode | None) -> TreeNode | None:
+        if not head or not head.next:
+            return head
         prev = None
         slow = head
         fast = head
@@ -21,34 +23,33 @@ class Solution:
             prev = slow
             slow = front
         
-        if slow:
-            res = TreeNode(slow.val)
-            temp = res
-            slow = slow.next
-            right = None
-            fast = slow
-            while slow:
-                front = slow.next
-                slow.next = right
-                right = slow
-                slow = front 
-            while prev:
-                    if temp.val > prev.val:
-                        temp.left = TreeNode(prev.val)
-                        temp = temp.left
-                    else:
-                        temp.right = TreeNode(prev.val)
-                        temp = temp.right
-                    
-                    prev = prev.next
-            temp = res
-            while right:
-                if temp.val < right.val:
-                    temp.right = TreeNode(right.val)
-                    temp = temp.right
-                else:
-                    temp.left = TreeNode(right.val)
+
+        res = TreeNode(slow.val)
+        temp = res
+        slow = slow.next
+        right = None
+        fast = slow
+        while slow:
+            front = slow.next
+            slow.next = right
+            right = slow
+            slow = front 
+        while prev:
+                if temp.val > prev.val:
+                    temp.left = TreeNode(prev.val)
                     temp = temp.left
-                right = right.next
-            print(res)
-            return res       
+                else:
+                    temp.right = TreeNode(prev.val)
+                    temp = temp.right
+                prev = prev.next
+        temp = res
+        while right:
+            if temp.val < right.val:
+                temp.right = TreeNode(right.val)
+                temp = temp.right
+            else:
+                temp.left = TreeNode(right.val)
+                temp = temp.left
+            right = right.next
+      
+        return res          
