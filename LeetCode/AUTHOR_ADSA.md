@@ -53,7 +53,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 ### 📂 Module  1.7: DesignBased Linked List Pro
 - [ ] Design HashSet
 - [ ] Design HashMap
-- [x] [Design Browser History](./Python/Medium/1472. Design Browser History/)
+- [x] [Design Browser History](./Python/Medium/1582. Design Browser History/)
 
 ### 📂 Module  1.8: Matrix & Hybrid Linked List
 - [ ] Spiral Matrix IV
@@ -101,7 +101,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Trapping Rain Water
 
 ### 📂 Module  2.6: Stack Design & History Simu
-- [x] [Design Browser History](./Python/Medium/1472. Design Browser History/)
+- [x] [Design Browser History](./Python/Medium/1582. Design Browser History/)
 - [ ] Build an Array With Stack Operations
 
 ---

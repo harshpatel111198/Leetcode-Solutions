@@ -302,7 +302,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] 132 Pattern
 - [ ] Next Greater Element I
 - [ ] Next Greater Element II
-- [x] [Design Browser History](./Python/Medium/1472. Design Browser History/)
+- [x] [Design Browser History](./Python/Medium/1582. Design Browser History/)
 - [ ] Clumsy Factorial
 
 ---
