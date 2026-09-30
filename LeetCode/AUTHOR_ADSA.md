@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 9 / 65 (13.8%)
+- **Completed:** 11 / 65 (16.9%)
 
 ---
 
@@ -53,7 +53,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 ### 📂 Module  1.7: DesignBased Linked List Pro
 - [ ] Design HashSet
 - [ ] Design HashMap
-- [ ] Design Browser History
+- [x] [Design Browser History](./Python/Medium/1472. Design Browser History/)
 
 ### 📂 Module  1.8: Matrix & Hybrid Linked List
 - [ ] Spiral Matrix IV
@@ -101,7 +101,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Trapping Rain Water
 
 ### 📂 Module  2.6: Stack Design & History Simu
-- [ ] Design Browser History
+- [x] [Design Browser History](./Python/Medium/1472. Design Browser History/)
 - [ ] Build an Array With Stack Operations
 
 ---
