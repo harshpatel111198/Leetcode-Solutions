@@ -1,6 +1,6 @@
 # 📝 55. Jump Game (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/jump-game/?envType=problem-list-v2&envId=array&)
+🔗 [Problem Link](https://leetcode.com/problems/jump-game/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 

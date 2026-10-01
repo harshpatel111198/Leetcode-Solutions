@@ -4,4 +4,6 @@ class Solution:
         for i in range(len(nums)):
             if i > maxInd:return False
             maxInd = max(maxInd, i + nums[i])
+            if maxInd >= len(nums) - 1:
+                break
         return True
