@@ -1,6 +1,6 @@
 # 📝 50. Pow(x, n) (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/powx-n/solutions/8556948/best-optimal-solution-easy-solution-java-15hr/)
+🔗 [Problem Link](https://leetcode.com/problems/powx-n/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
