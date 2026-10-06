@@ -14,4 +14,4 @@ class Solution:
             else:
                 return a * temp * temp
         
-        return recursion(b % 1337)
+        return recursion(b) % 1337
