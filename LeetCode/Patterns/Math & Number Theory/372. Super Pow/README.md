@@ -1,6 +1,6 @@
 # 📝 372. Super Pow (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/super-pow/solutions/)
+🔗 [Problem Link](https://leetcode.com/problems/super-pow/solutions/8549836/maths-easy-intuitive-solution-by-prakhar-8aju/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
@@ -8,7 +8,7 @@
 Math, Divide and Conquer, Euler's Totient Function, Euler's Theorem
 
 ### 🚀 Performance
-- **Runtime:** Successfully Evaluated
+- **Runtime:** N/A
 - **Memory:** N/A
 
 ---
