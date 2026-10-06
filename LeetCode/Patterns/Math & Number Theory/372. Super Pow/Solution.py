@@ -1,6 +1,6 @@
 class Solution:
     def superPow(self, a: int, b: list[int]) -> int:
-        b = "".join(str(n) for n in b)
+        b =  int("".join(map(str, numbers)))
         b = int(b)
         
         def recursion(b):
