@@ -1,6 +1,6 @@
 # 📝 372. Super Pow (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/super-pow/)
+🔗 [Problem Link](https://leetcode.com/problems/super-pow)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
