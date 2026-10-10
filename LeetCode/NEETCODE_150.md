@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 13 / 150 (8.7%)
+- **Completed:** 14 / 150 (9.3%)
 
 ---
 
@@ -99,7 +99,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 
 ### 📂 Backtracking
 - [ ] Subsets
-- [ ] Combination Sum
+- [x] [Combination Sum](./Python/Medium/39. Combination Sum/)
 - [ ] Permutations
 - [ ] Subsets II
 - [ ] Combination Sum II
