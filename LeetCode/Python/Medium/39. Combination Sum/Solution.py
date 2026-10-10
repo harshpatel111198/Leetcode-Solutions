@@ -4,9 +4,7 @@ class Solution:
             if ind > list_len-1 or target < 0:
                 return
             if target == 0:
-                
                 ans.append(lst[:])
-                
                 return
               
 
@@ -19,8 +17,8 @@ class Solution:
             self.findPairs(candidates, list_len, target, ind + 1, lst, ans)
            
     def combinationSum(self, candidates: list[int], target: int) -> list[list[int]]:
-        lst = []
+     
         ans = []
-        self.findPairs(candidates, len(candidates), target, 0, lst, ans)
+        self.findPairs(candidates, len(candidates), target, 0, [], ans)
         return ans
         
