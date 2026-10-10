@@ -8,11 +8,9 @@ class Solution:
                 return
               
 
-            target -= candidates[ind]
             lst.append(candidates[ind])
-            self.findPairs(candidates, list_len, target, ind, lst, ans)
+            self.findPairs(candidates, list_len, target - candidates[ind], ind, lst, ans)
 
-            target += candidates[ind]
             lst.pop()
             self.findPairs(candidates, list_len, target, ind + 1, lst, ans)
            
