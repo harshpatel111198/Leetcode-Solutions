@@ -1,14 +1,14 @@
-
-            self.findPairs(candidates, list_len, target, ind + 1 , lst, ans)
-            
+                lst.append(candidates[i])
+            for i in range(ind,list_len):
+                if i > ind and candidates[i] == candidates[i-1]:continue
+                if candidates[i] > target:break
+                self.findPairs(candidates, list_len, target - candidates[i], i + 1, lst, ans)
                 lst.pop()
+
+
+                    return
+                    ans.append(lst[:])
+            if target == 0:
     def combinationSum2(self, candidates: list[int], target: int) -> list[list[int]]:
         ans = []
-        self.findPairs(candidates, len(candidates), target, 0, [], ans)
-        seen = set()
-        unique_pairs = []
-        for pair in ans:
-        # Sort the pair and convert to a tuple so it can be added to the set
-            normalized = tuple(sorted(pair)) 
-            if normalized not in seen:
-                seen.add(normalized)
+            
