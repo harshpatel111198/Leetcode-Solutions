@@ -1,9 +1,4 @@
 
-    def combinationSum2(self, candidates: list[int], target: int) -> list[list[int]]:
-        ans = []
-        self.findPairs(candidates, len(candidates), target, 0, [], ans)
-        seen = set()
-        unique_pairs = []
             self.findPairs(candidates, list_len, target, ind + 1 , lst, ans)
             
                 lst.pop()
@@ -12,3 +7,8 @@
             if candidates[ind] <= target:
 
            
+                return
+                    ans.append(lst[:])
+                if target == 0:
+    def combinationSum2(self, candidates: list[int], target: int) -> list[list[int]]:
+        ans = []
