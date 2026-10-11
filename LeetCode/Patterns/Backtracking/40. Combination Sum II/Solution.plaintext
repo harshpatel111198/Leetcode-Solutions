@@ -9,6 +9,7 @@
                 if target == 0:
             if ind == list_len:
             
-    def findPairs(self, candidates, list_len, target, ind, lst, ans):
-            
             self.findPairs(candidates, list_len, target, ind + 1 , lst, ans)
+
+    def combinationSum2(self, candidates: list[int], target: int) -> list[list[int]]:
+        ans = []
