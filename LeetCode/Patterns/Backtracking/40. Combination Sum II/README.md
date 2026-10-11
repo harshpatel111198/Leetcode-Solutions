@@ -1,8 +1,8 @@
 # 📝 40. Combination Sum II (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/combination-sum-ii/)
+🔗 [Problem Link](https://leetcode.com/problems/combination-sum-ii)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Plaintext-blue)
 
 ### 💡 Tags
 Array, Backtracking

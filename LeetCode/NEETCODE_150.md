@@ -102,7 +102,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Combination Sum](./Python/Medium/39. Combination Sum/)
 - [ ] Permutations
 - [ ] Subsets II
-- [x] [Combination Sum II](./Python/Medium/40. Combination Sum II/)
+- [x] [Combination Sum II](./Plaintext/Medium/40. Combination Sum II/)
 - [ ] Word Search
 - [ ] Palindrome Partitioning
 - [ ] Letter Combinations of a Phone Number

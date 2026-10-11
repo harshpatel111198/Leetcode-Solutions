@@ -1,9 +1,14 @@
-        for pair in ans:
-        # Sort the pair and convert to a tuple so it can be added to the set
-            normalized = tuple(sorted(pair)) 
-            if normalized not in seen:
-                seen.add(normalized)
-                unique_pairs.append(pair)
-        return unique_pairs
-        unique_pairs = []
-        
+                self.findPairs(candidates, list_len, target - candidates[ind], ind + 1, lst, ans)
+                lst.pop()
+                lst.append(candidates[ind])
+
+            if candidates[ind] <= target:
+           
+                return
+                    ans.append(lst[:])
+                if target == 0:
+            if ind == list_len:
+            
+    def findPairs(self, candidates, list_len, target, ind, lst, ans):
+            
+            self.findPairs(candidates, list_len, target, ind + 1 , lst, ans)
