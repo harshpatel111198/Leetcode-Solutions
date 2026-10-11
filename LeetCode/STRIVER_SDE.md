@@ -48,7 +48,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 
 ### 📂 Greedy & Backtracking
 - [x] [Combination Sum](./Python/Medium/39. Combination Sum/)
-- [x] [Combination Sum II](./Plaintext/Medium/40. Combination Sum II/)
+- [x] [Combination Sum II](./Python/Medium/40. Combination Sum II/)
 - [ ] Palindrome Partitioning
 - [ ] Permutations
 - [ ] N-Queens
