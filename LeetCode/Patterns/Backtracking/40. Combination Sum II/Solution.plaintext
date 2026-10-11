@@ -1,0 +1,9 @@
+        for pair in ans:
+        # Sort the pair and convert to a tuple so it can be added to the set
+            normalized = tuple(sorted(pair)) 
+            if normalized not in seen:
+                seen.add(normalized)
+                unique_pairs.append(pair)
+        return unique_pairs
+        unique_pairs = []
+        
