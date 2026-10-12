@@ -13,6 +13,6 @@ class Solution:
     def subsetsWithDup(self, nums: list[int]) -> list[list[int]]:
         ans = []
         ans.append([])
-        
+        nums.sort()
         self.findSubsets(nums, len(nums), 0, [], ans)
         return ans
