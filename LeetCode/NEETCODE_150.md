@@ -98,7 +98,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Find Median from Data Stream
 
 ### 📂 Backtracking
-- [x] [Subsets](./Plaintext/Medium/78. Subsets/)
+- [x] [Subsets](./Python/Medium/78. Subsets/)
 - [x] [Combination Sum](./Python/Medium/39. Combination Sum/)
 - [ ] Permutations
 - [x] [Subsets II](./Python/Medium/90. Subsets II/)

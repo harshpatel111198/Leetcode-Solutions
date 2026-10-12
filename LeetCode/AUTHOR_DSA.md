@@ -146,13 +146,13 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 ### 📂 MODULE  3.11: COMBINATORIAL ARRAYS Pasca
 - [ ] s Triangle
 - [ ] s Triangle II
-- [x] [Subsets](./Plaintext/Medium/78. Subsets/)
+- [x] [Subsets](./Python/Medium/78. Subsets/)
 - [ ] Median of Two Sorted Arrays
 
 ### 📂 PART  2: SUBARRAYS, SUBSETS & KSUM This
 - [ ] Maximum Subarray
 - [ ] Subarray Sums Divisible by K
-- [x] [Subsets](./Plaintext/Medium/78. Subsets/)
+- [x] [Subsets](./Python/Medium/78. Subsets/)
 - [ ] Two Sum
 - [ ] 3Sum
 - [ ] 4Sum
