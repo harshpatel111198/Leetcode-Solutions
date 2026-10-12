@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 8 / 238 (3.4%)
+- **Completed:** 10 / 238 (4.2%)
 
 ---
 
@@ -146,13 +146,13 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 ### 📂 MODULE  3.11: COMBINATORIAL ARRAYS Pasca
 - [ ] s Triangle
 - [ ] s Triangle II
-- [ ] Subsets
+- [x] [Subsets](./Plaintext/Medium/78. Subsets/)
 - [ ] Median of Two Sorted Arrays
 
 ### 📂 PART  2: SUBARRAYS, SUBSETS & KSUM This
 - [ ] Maximum Subarray
 - [ ] Subarray Sums Divisible by K
-- [ ] Subsets
+- [x] [Subsets](./Plaintext/Medium/78. Subsets/)
 - [ ] Two Sum
 - [ ] 3Sum
 - [ ] 4Sum

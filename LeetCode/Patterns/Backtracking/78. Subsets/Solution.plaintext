@@ -1,0 +1,14 @@
+            lst.pop()
+        self.findSubsets(nums, len(nums), i + 2, lst, ans)
+            
+    def subsets(self, nums: list[int]) -> list[list[int]]:
+        ans = []
+            print(ans)
+            self.findSubsets(nums, len(nums), i + 1, lst, ans)
+            ans.append(lst[:])
+            lst.append(nums[i])
+            
+        for i in range(ind, nums_len):
+
+            # if ind + i != nums_len - 1:
+            return
