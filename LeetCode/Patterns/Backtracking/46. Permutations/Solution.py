@@ -5,7 +5,7 @@ class Solution:
             return
         
         for i in range(0, len(nums)):
-            if extra_list[i] == 1 : continue
+            if nums[i] in lst : continue
             lst.append(nums[i])
             extra_list[i] = 1
             self.allPairs(nums, lst, ans, extra_list)
