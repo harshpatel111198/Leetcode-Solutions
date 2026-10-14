@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 15 / 76 (19.7%)
+- **Completed:** 16 / 76 (21.1%)
 
 ---
 
@@ -50,7 +50,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [x] [Combination Sum](./Python/Medium/39. Combination Sum/)
 - [x] [Combination Sum II](./Python/Medium/40. Combination Sum II/)
 - [ ] Palindrome Partitioning
-- [ ] Permutations
+- [x] [Permutations](./Python/Medium/46. Permutations/)
 - [ ] N-Queens
 - [ ] Sudoku Solver
 - [ ] Word Break
