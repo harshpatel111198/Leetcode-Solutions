@@ -4,7 +4,7 @@ class Solution:
             ans.append(nums[:])
             return 
         for i in range(ind, len(nums)):
-            if i > ind and nums[i] == nums[ind]: continue
+            if i > ind and (nums[i] == nums[ind] or nums[i] == nums[i-1]): continue
             nums[ind], nums[i] = nums[i], nums[ind]
             self.uniquePermutation(nums, ind + 1, ans)
             nums[ind], nums[i] = nums[i], nums[ind]
