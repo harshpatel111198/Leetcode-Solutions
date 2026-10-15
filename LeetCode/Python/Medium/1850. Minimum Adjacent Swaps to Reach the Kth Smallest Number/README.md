@@ -1,6 +1,6 @@
 # 📝 1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/)
+🔗 [Problem Link](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
