@@ -7,7 +7,7 @@ class Solution:
                     if int(lst[i]) > int(lst[i-1]):
                         ind = i - 1
                         break
-                print(ind)
+
                 if ind == -1:
                     lst[::] = lst[::-1]
                 for j in range(len(lst)-1, ind, -1):
