@@ -18,10 +18,11 @@ class Solution:
                         break
                 left = ind + 1
                 right = len(lst) - 1
-                while left < right: 
-                    lst[left], lst[right] = lst[right], lst[left]
-                    left += 1
-                    right -= 1
+                lst[left:] = lst[left:][::-1]
+                # while left < right: 
+                #     lst[left], lst[right] = lst[right], lst[left]
+                #     left += 1
+                #     right -= 1
             i  = j = 0
             cnt = 0
             while i < len(num) and j < len(lst):
