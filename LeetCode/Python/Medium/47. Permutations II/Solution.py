@@ -4,8 +4,8 @@ class Solution:
             ans.append(lst[:])
             return 
         for i in range(0, len(nums)):
-            if extra_lst[i]: continue
-            if i > 0 and nums[i] == nums[i-1] and not extra_lst[i-1]: continue
+            # if : continue
+            if extra_lst[i] or (i > 0 and nums[i] == nums[i-1] and not extra_lst[i-1]): continue
             extra_lst[i] = 1
             lst.append(nums[i])
             self.uniquePermutation(nums, lst, ans, extra_lst)
