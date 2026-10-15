@@ -12,9 +12,7 @@ class Solution:
             return nums.reverse()
         for j in range(len(nums)-1,ind,-1):
             if nums[j] > nums[ind]:
-                temp = nums[ind]
-                nums[ind] = nums[j]
-                nums[j] = temp
+                nums[ind], nums[j] = nums[j], nums[ind]
                 break
         left = ind + 1
         right = len(nums)-1
@@ -22,7 +20,7 @@ class Solution:
             nums[left], nums[right] = nums[right], nums[left]
             left += 1
             right -= 1
-        print(ind,nums)
+    
         
 
         
