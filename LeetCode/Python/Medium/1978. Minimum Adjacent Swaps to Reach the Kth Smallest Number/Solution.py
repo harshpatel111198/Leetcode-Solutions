@@ -8,8 +8,8 @@ class Solution:
                         ind = i - 1
                         break
 
-                if ind == -1:
-                    lst[::] = lst[::-1]
+                # if ind == -1:
+                #     lst[::] = lst[::-1]
                 for j in range(len(lst)-1, ind, -1):
                     if int(lst[j]) > int(lst[ind]):
                         temp = lst[ind]
