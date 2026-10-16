@@ -9,7 +9,7 @@ class Solution:
             ans.append(lst[:])
             self.findSubsets(nums, len(nums), i + 1, lst, ans)
             lst.pop()
-        # self.findSubsets(nums, len(nums), i + 2, lst, ans)
+        self.findSubsets(nums, len(nums), i + 2, lst, ans)
             
     def subsets(self, nums: list[int]) -> list[list[int]]:
         ans = []
