@@ -34,9 +34,9 @@ class Solution:
 
     def solveNQueens(self, n: int) -> list[list[str]]:
         ans = []
-        board = ["." * n for _ in range(n)]
+        # board = ["." * n for _ in range(n)]
 
-        self.placeQueen(n, 0, board, ans)
+        self.placeQueen(n, 0, ["."*n]*n, ans)
         
         return ans
 
