@@ -28,17 +28,15 @@ class Solution:
             return 
         for row in range(0, n):
             if self.isSafe(row, col, n, board):
-                print(board)
                 board[row] = board[row][:col] + 'Q' + board[row][col+1:]
-                print(board)
                 self.placeQueen(n, col + 1, board, ans)
-                board[row] = board[row][:col]+'.'+board[row][col+1:]
+                board[row] = board[row][:col] + '.' + board[row][col+1:]
 
     def solveNQueens(self, n: int) -> list[list[str]]:
         ans = []
         board = ["." * n for _ in range(n)]
-        print(board) 
+
         self.placeQueen(n, 0, board, ans)
-        # print([[]*n]*n)
+        
         return ans
 
