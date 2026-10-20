@@ -1,6 +1,6 @@
 # 📝 37. Sudoku Solver (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/sudoku-solver/solutions/)
+🔗 [Problem Link](https://leetcode.com/problems/sudoku-solver/solutions/8579602/java-solution-with-line-by-line-explanat-zmuu/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
@@ -8,7 +8,7 @@
 Array, Hash Table, Backtracking, Matrix, Algorithm X, Dancing Links
 
 ### 🚀 Performance
-- **Runtime:** Successfully Evaluated
+- **Runtime:** N/A
 - **Memory:** N/A
 
 ---
