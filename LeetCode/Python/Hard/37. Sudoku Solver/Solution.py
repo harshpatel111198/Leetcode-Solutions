@@ -1,45 +1,56 @@
 class Solution:
-    def solveSudoku(self, board: List[List[str]]) -> None:
-        used_row = [set() for _ in range(9)]
-        used_col = [set() for _ in range(9)]
-        used_box = [set() for _ in range(9)]
-        for i in range(9):
-            for j in range(9):
-                if board[i][j] != ".":
-                    val = int(board[i][j])
-                    used_row[i].add(val)
-                    used_col[j].add(val)
-                    box_id = (i // 3) * 3 + (j // 3)
-                    used_box[box_id].add(val)
-
-        def is_valid(i, j, val):
-            box_id = (i // 3) * 3 + (j // 3)
-            return val not in used_box[box_id] and val not in used_row[i] and val not in used_col[j]
-
-        def dfs(i, j):
-            if i == 9:
+    def solveSudoku(self, board: list[list[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        # 1. Use sets to track what numbers already exist in each row, col, and 3x3 box
+        rows = [set() for _ in range(9)]
+        cols = [set() for _ in range(9)]
+        boxes = [set() for _ in range(9)]
+        empty_cells = []
+        
+        # 2. Single scan to initialize our sets and collect all empty coordinates
+        for r in range(9):
+            for c in range(9):
+                val = board[r][c]
+                if val != ".":
+                    rows[r].add(val)
+                    cols[c].add(val)
+                    box_idx = (r // 3) * 3 + (c // 3)
+                    boxes[box_idx].add(val)
+                else:
+                    empty_cells.append((r, c))
+                    
+        # 3. Direct index-based backtracking function
+        def backtrack(index: int) -> bool:
+            # If we've filled all empty cells, the puzzle is solved!
+            if index == len(empty_cells):
                 return True
-            next_i = next_j = 0
-            if j < 8:
-                next_i, next_j = i, j+1
-            elif j == 8:
-                next_i, next_j = i+1, 0
-            if board[i][j] != ".":
-                return dfs(next_i, next_j)
-
-            box_id = (i // 3) * 3 + (j // 3)
-            for x in range(1, 10):
-                if is_valid(i, j, x):
-                    board[i][j] = str(x)
-                    used_row[i].add(x)
-                    used_col[j].add(x)
-                    used_box[box_id].add(x)
-                    if dfs(next_i, next_j):
+                
+            r, c = empty_cells[index]
+            box_idx = (r // 3) * 3 + (c // 3)
+            
+            # Try placing digits '1' through '9'
+            for val in ("1", "2", "3", "4", "5", "6", "7", "8", "9"):
+                # O(1) Instant Lookup Check
+                if val not in rows[r] and val not in cols[c] and val not in boxes[box_idx]:
+                    # Make a choice
+                    board[r][c] = val
+                    rows[r].add(val)
+                    cols[c].add(val)
+                    boxes[box_idx].add(val)
+                    
+                    # Recursively move directly to the next empty cell
+                    if backtrack(index + 1):
                         return True
-                    board[i][j] = "."
-                    used_row[i].remove(x)
-                    used_col[j].remove(x)
-                    used_box[box_id].remove(x)
+                        
+                    # Backtrack (Undo choice)
+                    board[r][c] = "."
+                    rows[r].remove(val)
+                    cols[c].remove(val)
+                    boxes[box_idx].remove(val)
+                    
             return False
-        dfs(0, 0)
-        return
+
+        # Start the backtracking at the first empty cell index
+        backtrack(0)
