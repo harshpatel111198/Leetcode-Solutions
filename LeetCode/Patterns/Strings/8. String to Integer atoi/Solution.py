@@ -29,4 +29,12 @@ class Solution:
             # Extract the integer value using ASCII math
             digit = ord(char) - ord('0')
             result = (result * 10) + digit
+        INT_MIN = -2147483648
+INT_MAX = 2147483647
+
+# ... inside your loop after calculating the 'result'
+if not is_negative and result > INT_MAX:
+    return INT_MAX
+if is_negative and -result < INT_MIN:
+    return INT_MIN
         return -result if res[0] == "-" else result
