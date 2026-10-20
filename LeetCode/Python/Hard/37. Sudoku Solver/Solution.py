@@ -3,9 +3,9 @@ class Solution:
         for j in range(0,9):
             if board[j][col] == c:
                 return False
-            elif board[row][j] == c:
+            if board[row][j] == c:
                 return False
-            elif board[3 * (row // 3) + j // 3][3 * (col//3) + j % 3] == c:
+            if board[3 * (row // 3) + j // 3][3 * (col//3) + j % 3] == c:
                 return False
         return True
     def placeNumber(self, board):
