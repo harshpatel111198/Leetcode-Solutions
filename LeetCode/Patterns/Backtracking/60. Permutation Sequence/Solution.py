@@ -1,24 +1,19 @@
 class Solution:
-    def getkthPermutation(self, ind, nums, ans):
-        if  ind == len(nums):
-         
-            ans.append(nums[:])
-            return
-
-     
-        for i in range(ind, len(nums)):
-            nums[ind], nums[i] = nums[i], nums[ind]
-            
-            self.getkthPermutation(ind + 1, nums, ans)
-            nums[ind], nums[i] = nums[i], nums[ind]
-        
     def getPermutation(self, n: int, k: int) -> str:
-
-        nums = list(range(1, n+1))
+        fact = 1
+        nums = []
+        for i in range(1,n):
+            fact = fact * i
+            nums.append(i)
+        nums.append(n)
        
-        ans = []
-        self.getkthPermutation(0, nums, ans)
-        ans = sorted(ans)[k-1]
-        res = "".join(map(str, ans))
-        return res
-        
+        ans = ""
+        k = k - 1
+        while True:
+            ans = ans + str(nums[k // fact])
+            nums.remove(nums[k // fact])
+            if len(nums) == 0:
+                break
+            k = k % fact
+            fact = fact // len(nums)
+        return ans
