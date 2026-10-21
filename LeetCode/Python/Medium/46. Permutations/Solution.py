@@ -1,17 +1,15 @@
 class Solution:
-    def allPairs(self, nums, lst, ans):
-        if len(lst) == len(nums):
-            ans.append(lst[:])
-            return
+    def allPairs(self, nums, ind, ans):
+        if ind == len(nums):
+            ans.append(nums[:])
         
-        for i in range(0, len(nums)):
-            if nums[i] in lst : continue
-            lst.append(nums[i])
-            
-            self.allPairs(nums, lst, ans)
-            lst.pop()
+        for i in range(ind, len(nums)):
+            nums[ind], nums[i] = nums[i], nums[ind]
+            self.allPairs(nums, ind + 1, ans)
+            nums[ind], nums[i] = nums[i], nums[ind]
+         
             
     def permute(self, nums: list[int]) -> list[list[int]]:
         ans = []
-        self.allPairs(nums, [], ans)
+        self.allPairs(nums, 0, ans)
         return ans
