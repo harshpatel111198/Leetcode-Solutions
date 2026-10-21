@@ -1,22 +1,20 @@
 class Solution:
-    def allPairs(self, nums, lst, ans):
-        if len(lst) == len(nums):
-            ans.append(lst[:])
+    def getkthPermutation(self, k, ind, cnt, nums, ans):
+        if  ind == len(nums):
+            ans.append(nums[:])
             return
-        
-        for i in range(0, len(nums)):
-            if nums[i] in lst : continue
-            lst.append(nums[i])
+        print(k, nums)
+        for i in range(ind, len(nums)):
+            nums[ind], nums[i] = nums[i], nums[ind]
             
-            self.allPairs(nums, lst, ans)
-            lst.pop()
+            self.getkthPermutation( k-1, ind + 1, cnt + 1, nums, ans)
+            nums[ind], nums[i] = nums[i], nums[ind]
         
     def getPermutation(self, n: int, k: int) -> str:
 
         nums = list(range(1, n+1))
        
         ans = []
-        self.allPairs(nums, [], ans)
-    
+        self.getkthPermutation( k, 0, 0, nums, ans)
         return "".join(map(str,ans[k-1]))
         
