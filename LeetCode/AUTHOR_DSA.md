@@ -182,7 +182,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Reverse Words in a String
 - [ ] Length of Last Word
 - [ ] Reverse Words in a String III
-- [x] [Sorting the Sentence](./Python/Easy/1859. Sorting the Sentence/)
+- [x] [Sorting the Sentence](./Python/Easy/1970. Sorting the Sentence/)
 - [ ] Faulty Keyboard
 - [ ] License Key Formatting
 - [ ] Keyboard Row
