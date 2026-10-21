@@ -1,0 +1,13 @@
+    def getPermutation(self, n: int, k: int) -> str:
+
+        nums = list(range(1, n+1))
+            nums[ind], nums[i] = nums[i], nums[ind]
+            self.getkthPermutation( k-1, ind + 1, cnt + 1, nums, ans)
+            nums[ind], nums[i] = nums[i], nums[ind]
+        
+            
+       
+        ans = []
+        self.getkthPermutation( k, 0, 0, nums, ans)
+        return "".join(map(str,ans[k-1]))
+        
