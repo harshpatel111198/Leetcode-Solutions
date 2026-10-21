@@ -2,7 +2,7 @@
 
 🔗 [Problem Link](https://leetcode.com/problems/permutation-sequence/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Python-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Plaintext-blue)
 
 ### 💡 Tags
 Math, Recursion

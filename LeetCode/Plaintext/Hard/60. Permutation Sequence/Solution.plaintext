@@ -2,12 +2,15 @@
 
         nums = list(range(1, n+1))
             nums[ind], nums[i] = nums[i], nums[ind]
-            self.getkthPermutation( k-1, ind + 1, cnt + 1, nums, ans)
+            self.getkthPermutation( k-, ind + 1, cnt + 1, nums, ans)
             nums[ind], nums[i] = nums[i], nums[ind]
         
             
        
         ans = []
         self.getkthPermutation( k, 0, 0, nums, ans)
-        return "".join(map(str,ans[k-1]))
-        
+        for i in range(ind, len(nums)):
+        print(k, nums)
+            return
+            ans.append(nums[:])
+        if  ind == len(nums):
