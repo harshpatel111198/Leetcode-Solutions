@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 22 / 150 (14.7%)
+- **Completed:** 23 / 150 (15.3%)
 
 ---
 
@@ -104,7 +104,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Subsets II](./Python/Medium/90. Subsets II/)
 - [x] [Combination Sum II](./Python/Medium/40. Combination Sum II/)
 - [x] [Word Search](./Python/Medium/79. Word Search/)
-- [ ] Palindrome Partitioning
+- [x] [Palindrome Partitioning](./Python/Medium/131. Palindrome Partitioning/)
 - [ ] Letter Combinations of a Phone Number
 - [x] [N-Queens](./Python/Hard/51. N-Queens/)
 
