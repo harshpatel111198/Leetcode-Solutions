@@ -14,9 +14,7 @@ class Solution:
             for i in range(top,bottom+1):
                 res.append(matrix[i][right])
             right -= 1
-
             # print(top,bottom,left,right)
-            
             #left
             if top <= bottom:
                 for i in range(right,left-1,-1):
