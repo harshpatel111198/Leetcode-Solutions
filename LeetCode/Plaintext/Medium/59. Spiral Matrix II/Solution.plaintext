@@ -1,0 +1,12 @@
+            for i in range(right, left - 1, -1):
+                res[bottom][i] = num
+                num += 1
+            bottom -= 1
+
+            for i in range(bottom, top - 1, -1):
+                res[i][left] = num
+                num += 1
+            left += 1
+        return res
+
+
