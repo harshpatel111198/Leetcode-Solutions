@@ -1,22 +1,29 @@
 class Solution:
     def reorganizeString(self, s: str) -> str:
-        dct = {}
-        l = [""]*len(s)
+        str_len = len(s)
+        hash_map = {}
+
         for char in s:
-            dct[char] = dct.get(char,0) + 1
+            hash_map[char] = hash_map.get(char, 0) + 1
+            if hash_map[char] > (len(s) + 1) // 2:
+                return ""
+           
+        max_heap = [[-cnt, char] for char, cnt in hash_map.items()]
+        heapq.heapify(max_heap)
 
-        sorted_chars = sorted(dct.keys(),key=lambda x: dct[x], reverse = True)
+        res = ""
+        prev = None
+        while max_heap or prev:
+            if prev and not max_heap:
+                return ""
+            cnt, char = heapq.heappop(max_heap)
 
-        if dct[sorted_chars[0]] > (len(s)+1)//2:
-            return ""
-
-        ind = 0
-        for char in sorted_chars:
-            for _ in range(dct[char]):
-                if ind > len(s)-1:
-                    ind = 1
-                l[ind] = char
-                ind += 2
-
-                
-        return "".join(l)
+            res += char
+            cnt += 1
+            
+            if prev:
+                heapq.heappush(max_heap, prev)
+                prev = None
+            if cnt !=0:
+                prev = [cnt, char] 
+        return res
