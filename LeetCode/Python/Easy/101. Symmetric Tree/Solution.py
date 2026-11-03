@@ -6,22 +6,27 @@
 #         self.right = right
 class Solution:
     def isSymmetric(self, root: TreeNode | None) -> bool:
+        if not root:
+            return True
+            
+        # Stack stores pairs of nodes that should be mirror images of each other
+        stack = [(root.left, root.right)]
         
-        stack1 = []
-        stack2 = []
-        curr1 = root
-        curr2 = root
-        while curr1 and curr2:
-            while curr1:
-                stack1.append(curr1)
-                curr1 = curr1.left
-            while curr2:
-                stack2.append(curr2)
-                curr2 = curr2.right
-            curr1 = stack1.pop()
-            curr2 = stack2.pop()
-            if curr1.val != curr2.val:
+        while stack:
+            left, right = stack.pop()
+            
+            # If both are None, this path is symmetric; continue checking others
+            if not left and not right:
+                continue
+                
+            # If only one is None, or their values don't match, it's asymmetric
+            if not left or not right or left.val != right.val:
                 return False
-            curr1 = curr1.right
-            curr2 = curr2.left
+                
+            # Push children in mirrored pairs:
+            # 1. Outer children: left's left with right's right
+            # 2. Inner children: left's right with right's left
+            stack.append((left.left, right.right))
+            stack.append((left.right, right.left))
+            
         return True
