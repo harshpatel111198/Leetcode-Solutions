@@ -19,7 +19,7 @@ class Solution:
            
             curr = curr.right
         max_val = max(freq_map.values())
-        print(max_val, freq_map)
+    
         res = [k for k, v in freq_map.items() if v == max_val]
 
         return res
