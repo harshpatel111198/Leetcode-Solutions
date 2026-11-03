@@ -6,7 +6,10 @@
 #         self.right = right
 class Solution:
     def findMode(self, root: TreeNode | None) -> list[int]:
-        freq_map = {}
+        res = []
+        prev_max = 0
+        curr_max = 1
+        prev_ele = 0
         stack = []
         curr = root
         while curr or stack:
@@ -14,12 +17,27 @@ class Solution:
                 stack.append(curr)
                 curr = curr.left
             curr = stack.pop()
-            
-            freq_map[curr.val] = freq_map.get(curr.val, 0) + 1
+
+            if prev_ele == curr.val:
+                curr_max += 1
+                if prev_max < curr_max:
+                  
+                    res.clear()
+                
+                    res.append(curr.val)
+                if prev_max == curr_max:
+                    res.append(curr.val)
+                    print(res)
+            else: 
+                prev_max = curr_max
+                prev_ele = curr.val
+                curr_max = 1
+                
+            # freq_map[curr.val] = freq_map.get(curr.val, 0) + 1
            
             curr = curr.right
-        max_val = max(freq_map.values())
+        # max_val = max(freq_map.values())
     
-        res = [k for k, v in freq_map.items() if v == max_val]
+        # res = [k for k, v in freq_map.items() if v == max_val]
 
         return res
