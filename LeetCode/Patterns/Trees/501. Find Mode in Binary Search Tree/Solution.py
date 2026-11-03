@@ -21,15 +21,15 @@ class Solution:
             if prev_ele == curr.val:
                 curr_max += 1 
             else: 
+                prev_max = max(curr_max, prev_max)
                 prev_ele = curr.val
                 curr_max = 1
-                print(curr_max, prev_max)
                 if curr_max > prev_max:
                     res.append(curr.val)
+            
             if prev_max == curr_max:
                     if curr.val not in res:
-                        res.append(curr.val)
-             
+                        res.append(curr.val) 
             if prev_max < curr_max:
                   
                     res.clear()
@@ -38,9 +38,8 @@ class Solution:
                     prev_max = curr_max
                     prev_ele = curr.val
                     # curr_max = 1
-                
-            print(res)
-            prev_max = max(curr_max, prev_max)
+            
+            
                 
             # freq_map[curr.val] = freq_map.get(curr.val, 0) + 1
            
