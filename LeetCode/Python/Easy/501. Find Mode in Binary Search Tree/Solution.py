@@ -28,7 +28,6 @@ class Solution:
                     res.append(curr.val)
             
             if prev_max == curr_max:
-                    if curr.val not in res:
                         res.append(curr.val) 
             if prev_max < curr_max:
                   
