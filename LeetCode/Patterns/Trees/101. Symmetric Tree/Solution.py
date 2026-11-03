@@ -17,7 +17,7 @@ class Solution:
             
             # If both are None, this path is symmetric; continue checking others
             if not left and not right:
-                continue
+                break
                 
             # If only one is None, or their values don't match, it's asymmetric
             if not left or not right or left.val != right.val:

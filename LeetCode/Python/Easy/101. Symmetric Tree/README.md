@@ -1,6 +1,6 @@
 # 📝 101. Symmetric Tree (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/symmetric-tree/?envType=problem-list-v2&envId=tree)
+🔗 [Problem Link](https://leetcode.com/problems/symmetric-tree/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
