@@ -6,27 +6,40 @@
 #         self.right = right
 class Solution:
     def isSymmetric(self, root: TreeNode | None) -> bool:
+        # if not root:
+        #     return True
+            
+        # # Stack stores pairs of nodes that should be mirror images of each other
+        # stack = [(root.left, root.right)]
+        
+        # while stack:
+        #     left, right = stack.pop()
+            
+        #     # If both are None, this path is symmetric; continue checking others
+        #     if not left and not right:
+        #         continue
+                
+        #     # If only one is None, or their values don't match, it's asymmetric
+        #     if not left or not right or left.val != right.val:
+        #         return False
+                
+        #     # Push children in mirrored pairs:
+        #     # 1. Outer children: left's left with right's right
+        #     # 2. Inner children: left's right with right's left
+        #     stack.append((left.left, right.right))
+        #     stack.append((left.right, right.left))
+            
+        # return True
         if not root:
             return True
-            
-        # Stack stores pairs of nodes that should be mirror images of each other
-        stack = [(root.left, root.right)]
-        
-        while stack:
-            left, right = stack.pop()
-            
-            # If both are None, this path is symmetric; continue checking others
+        def isSymmetricRec(left, right):
             if not left and not right:
-                continue
-                
-            # If only one is None, or their values don't match, it's asymmetric
+                return True
+            
             if not left or not right or left.val != right.val:
                 return False
-                
-            # Push children in mirrored pairs:
-            # 1. Outer children: left's left with right's right
-            # 2. Inner children: left's right with right's left
-            stack.append((left.left, right.right))
-            stack.append((left.right, right.left))
             
-        return True
+            return isSymmetricRec(left.left, right.right) and isSymmetricRec(left.right, right.left)
+            
+        
+        return isSymmetricRec(root.left, root.right)
