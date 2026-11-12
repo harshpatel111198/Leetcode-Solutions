@@ -14,11 +14,14 @@ class Solution:
         
         while queue:
             size = len(queue)
-            temp = []
+            temp = [0] * size
             hold = []
-            for _ in range(size):
+            for i in range(size):
                 node = queue.pop(0)
-                temp.append(node.val)
+                if switch:
+                    temp[i] = node.val
+                else:
+                    temp[size - i - 1] = node. val
 
                 if node.left:
                     queue.append(node.left)
@@ -26,11 +29,12 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
             
-            if switch:
-                switch = 0
-            else:
-                temp.reverse()
-                switch = 1
+            # if switch:
+            #     switch = 0
+            # else:
+            #     # temp.reverse()
+            #     switch = 1
+            switch = 0 if switch else 1
             ans.append(temp)
         return ans
             
