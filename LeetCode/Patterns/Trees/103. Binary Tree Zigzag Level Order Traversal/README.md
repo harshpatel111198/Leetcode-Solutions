@@ -2,7 +2,7 @@
 
 🔗 [Problem Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Plaintext-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
 ### 💡 Tags
 Tree, Breadth-First Search, Binary Tree
