@@ -1,6 +1,6 @@
 # 📝 102. Binary Tree Level Order Traversal (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+🔗 [Problem Link](https://leetcode.com/problems/binary-tree-level-order-traversal/?envType=problem-list-v2&envId=tree)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
