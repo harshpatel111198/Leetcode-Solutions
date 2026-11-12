@@ -20,10 +20,10 @@ class Solution:
                 temp.append(node.val)
             
             
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
             
             ans.append(temp)
         return ans
