@@ -27,11 +27,11 @@ class Solution:
                     queue.append(node.right)
             
             if switch:
-                ans.append(temp)
                 switch = 0
             else:
-                ans.append(temp[::-1])
+                temp.reverse()
                 switch = 1
+            ans.append(temp)
         return ans
             
             
