@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode | None) -> list[list[int]]:
-        switch = 0
+        switch = 1
         if not root:
             return []
         queue = [root]
@@ -15,28 +15,23 @@ class Solution:
         while queue:
             size = len(queue)
             temp = []
+            hold = []
             for _ in range(size):
-                
                 node = queue.pop(0)
                 temp.append(node.val)
-                if switch == 1:
-                 
-                    if node.left:
-                        queue.append(node.left)
+
+                if node.left:
+                    queue.append(node.left)
                 
-                    if node.right:
-                        queue.append(node.right)
-                else:
-                    if node.right:
-                        queue.append(node.right)
-                
-                    if node.left:
-                        queue.append(node.left)
-            ans.append(temp)
-            if switch == 0:
-                switch = 1
-            else:
+                if node.right:
+                    queue.append(node.right)
+            
+            if switch:
+                ans.append(temp)
                 switch = 0
+            else:
+                ans.append(temp[::-1])
+                switch = 1
         return ans
             
             

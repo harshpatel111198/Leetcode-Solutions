@@ -81,7 +81,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Balanced Binary Tree
 - [ ] Lowest Common Ancestor of a Binary Tree
 - [ ] Same Tree
-- [x] [Binary Tree Zigzag Level Order Traversal](./Plaintext/Medium/103. Binary Tree Zigzag Level Order Traversal/)
+- [x] [Binary Tree Zigzag Level Order Traversal](./Python/Medium/103. Binary Tree Zigzag Level Order Traversal/)
 - [ ] Binary Tree Maximum Path Sum
 - [ ] Construct Binary Tree from Preorder and Inorder Traversal
 - [x] [Symmetric Tree](./Python/Easy/101. Symmetric Tree/)
