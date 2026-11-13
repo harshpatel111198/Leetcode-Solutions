@@ -1,29 +1,19 @@
 class Solution:
-    def validMountainArray(self, arr: List[int]) -> bool:
-        length = len(arr)
-       
-        high = 0
-        while high+1 < length and arr[high] < arr[high+1]:
-            high+=1
-        if high == 0 or high == length-1:
+    def validMountainArray(self, arr: list[int]) -> bool:
+        i = 0
+        while i < len(arr):
+            if i < len(arr) - 1 and arr[i] == arr[i + 1]:
+                return False
+            if i < len(arr) - 1 and arr[i] > arr[i + 1]:
+                i += 1
+                break
+            i += 1
+        if i >= len(arr) - 1:
             return False
-        while high+1 < length and arr[high] > arr[high+1]:
-            high+=1
-        return high == length-1
-        # for i in range(1,length):
-        #     if arr[high] < arr[i]:
-        #         high = i
-        #     elif arr[high] == arr[i]:
-        #         return False
-        #     else:
-        #         break
-        # if high not in range(1,length-1):
-        #     return False
-        # for j in range(high+1, length-1):
-        #     if arr[j] <= arr[j+1]:
-        #         return False
-        # return True
-
+        while i < len(arr):
+            if i < len(arr) - 1 and arr[i] <= arr[i+1]:
+                return False
+            i += 1
+        return True
         
-
-
+            
