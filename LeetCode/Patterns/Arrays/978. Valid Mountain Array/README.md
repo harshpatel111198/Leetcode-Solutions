@@ -8,8 +8,8 @@
 Array
 
 ### 🚀 Performance
-- **Runtime:** 161 ms
-- **Memory:** 20.4 MB
+- **Runtime:** 155 ms
+- **Memory:** 20.6 MB
 
 ---
 
