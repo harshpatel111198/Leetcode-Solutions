@@ -14,10 +14,9 @@ class Solution:
             lst.append(root.val)
             if not root.left and not root.right and total == targetSum:
                     ans.append(lst[:])
-                    
-            else:
-                    preorder(root.left, total,lst, ans)
-                    preorder(root.right, total,lst, ans)
+            
+            preorder(root.left, total,lst, ans)
+            preorder(root.right, total,lst, ans)
             
             lst.pop()
             
