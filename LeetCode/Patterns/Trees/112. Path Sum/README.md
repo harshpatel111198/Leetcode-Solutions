@@ -1,6 +1,6 @@
 # 📝 112. Path Sum (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/path-sum/solutions/6434241/video-using-dfs-by-niits-psag/?envType=problem-list-v2&envId=tree)
+🔗 [Problem Link](https://leetcode.com/problems/path-sum)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
