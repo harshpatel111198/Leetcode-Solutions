@@ -6,4 +6,21 @@
 #         self.right = right
 class Solution:
     def pathSum(self, root: TreeNode | None, targetSum: int) -> list[list[int]]:
-        
+        def preorder(root, total, lst, ans):
+            if not root:
+                return []
+
+            total += root.val
+            lst.append(root.val)
+            if not root.left and not root.right and total == targetSum:
+                    ans.append(lst[:])
+                    
+            else:
+                    preorder(root.left, total,lst, ans)
+                    preorder(root.right, total,lst, ans)
+            
+            lst.pop()
+            
+        ans = []
+        preorder(root, 0, [],ans)
+        return ans
