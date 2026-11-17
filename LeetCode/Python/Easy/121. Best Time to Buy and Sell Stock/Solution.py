@@ -3,8 +3,8 @@ class Solution:
         buy_price = prices[0]
         max_prof = 0
         for i in range(1, len(prices)):
-            if prices[i] == 0:
-                continue
+            # if prices[i] == 0:
+            #     continue
 
             if buy_price > prices[i]:
                 buy_price = prices[i]
