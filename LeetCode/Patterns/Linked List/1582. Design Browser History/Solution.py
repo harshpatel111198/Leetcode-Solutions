@@ -3,9 +3,8 @@ class ListNode:
         self.data = data
         self.back = back
         self.next = next
-
 class BrowserHistory:
-    currentPage = None
+    # currentPage = None
     def __init__(self, homepage: str):
         self.currentPage = ListNode(homepage)
 
@@ -20,13 +19,13 @@ class BrowserHistory:
             self.currentPage = self.currentPage.back
             steps -= 1
         return self.currentPage.data
+        
 
     def forward(self, steps: int) -> str:
         while steps and self.currentPage.next:
             self.currentPage = self.currentPage.next
             steps -= 1
-        return self.currentPage.data 
-        
+        return self.currentPage.data
 
 
 # Your BrowserHistory object will be instantiated and called as such:

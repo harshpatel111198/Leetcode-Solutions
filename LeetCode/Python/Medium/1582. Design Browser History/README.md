@@ -8,8 +8,8 @@
 Array, Linked List, Stack, Design, Doubly-Linked List, Data Stream
 
 ### 🚀 Performance
-- **Runtime:** 48 ms
-- **Memory:** 22.2 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
