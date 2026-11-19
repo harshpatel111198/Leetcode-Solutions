@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 31 / 150 (20.7%)
+- **Completed:** 32 / 150 (21.3%)
 
 ---
 
@@ -72,7 +72,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Diameter of Binary Tree
 - [ ] Balanced Binary Tree
 - [x] [Same Tree](./Python/Easy/100. Same Tree/)
-- [ ] Subtree of Another Tree
+- [x] [Subtree of Another Tree](./Python/Easy/572. Subtree of Another Tree/)
 - [ ] Lowest Common Ancestor of a Binary Search Tree
 - [x] [Binary Tree Level Order Traversal](./Python/Medium/102. Binary Tree Level Order Traversal/)
 - [ ] Binary Tree Right Side View
