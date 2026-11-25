@@ -8,6 +8,6 @@ group by visited_on
 order by visited_on)
 
 select visited_on,
-round(sum(amount) over(order by visited_on rows between 6 preceding and current row), 2) as amount,
+sum(amount) over(order by visited_on rows between 6 preceding and current row) as amount,
 round(avg(amount) over(order by visited_on rows between 6 preceding and current row), 2) as average_amount
 from day_sale offset 6;
